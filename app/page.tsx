@@ -45,35 +45,12 @@ export default function HomePage() {
         <div className="hero-desk-grid">
           <div className="hero-copy">
             <p className="eyebrow">Accountants in Ongar, Essex</p>
-            <h1>Clear accountancy advice for local businesses and personal clients</h1>
-            <p className="hero-lead">
-              Foot &amp; Ellis-Smith is a High Street practice established in {business.established}.
-              The firm works hard to get to know you so it can deliver timely, individual advice on
-              accounting, taxation and support.
-            </p>
-            <p>
-              To find out how the practice can help you and your business, arrange a{" "}
-              <strong style={{ color: "#F7F3EA" }}>free no-obligation meeting</strong> — call, email
-              or visit 47B High Street.
-            </p>
+            <h1>Clear advice for local businesses and personal clients</h1>
+            <p className="hero-lead">Timely, individual advice on accounting, taxation and support.</p>
             <div className="hero-actions">
               <a className="button button-primary" href={`tel:${business.phoneTel}`}>
                 Call {business.phoneDisplay}
               </a>
-              <a className="button button-secondary" href={`mailto:${business.email}`}>
-                Email {business.email}
-              </a>
-              <Link className="button button-secondary" href="/contact">
-                Visit the practice
-              </Link>
-            </div>
-            <div className="hero-meta">
-              <span>
-                <strong>Since {business.established}</strong> · Ongar High Street
-              </span>
-              <span>
-                <strong>Director:</strong> {director.name}
-              </span>
             </div>
           </div>
           <div className="hero-media">
@@ -149,14 +126,18 @@ export default function HomePage() {
             <p className="eyebrow">The practice</p>
             <h2 id="practice-title">First-class client service on Ongar High Street</h2>
             <p>
-              Foot &amp; Ellis-Smith was established in {business.established} and continues to offer
-              advice and service to local business and personal clients, with expertise oriented to
-              the small business sector.
+              Foot &amp; Ellis-Smith is a High Street practice established in {business.established}.
+              The firm works hard to get to know you so it can deliver timely, individual advice on
+              accounting, taxation and support.
             </p>
             <p>
               {director.name}, {director.role}, acquired the business in 2017 from his father having
               qualified as an accountant in 2014. He has been actively involved with clients for a
               number of years and is keen to build on the firm’s success.
+            </p>
+            <p>
+              To find out how the practice can help you and your business, arrange a{" "}
+              <strong>free no-obligation meeting</strong> — call, email or visit 47B High Street.
             </p>
             <div className="values-row">
               {values.map((v) => (
