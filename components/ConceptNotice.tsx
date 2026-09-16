@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
-const storageKey = "foot-ellis-smith-concept-notice-dismissed-v4";
+const storageKey = "foot-ellis-smith-concept-notice-dismissed-v5";
 
 export function ConceptNotice() {
   const [open, setOpen] = useState(false);

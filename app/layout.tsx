@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ConceptNotice } from "@/components/ConceptNotice";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { business } from "@/lib/business";
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <ScrollToTop />
         <ConceptNotice />
       </body>
     </html>
