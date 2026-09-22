@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
-const storageKey = "foot-ellis-smith-concept-notice-dismissed-v5";
+const storageKey = "foot-ellis-smith-concept-notice-dismissed-v8";
 
 export function ConceptNotice() {
   const [open, setOpen] = useState(false);
@@ -83,16 +83,12 @@ export function ConceptNotice() {
               business and personal clients find the right accountancy support. This is not the live or official site — the business did not ask for it and has not approved it.
             </p>
             <div className="concept-actions">
-              <a
-                className="button button-lsl"
-                href="https://localsiteslab.com"
-                onClick={dismiss}
-              >
-                Get a site like this
-              </a>
-              <button type="button" className="concept-continue" onClick={dismiss}>
+              <button type="button" className="button" onClick={dismiss}>
                 Continue to Foot &amp; Ellis-Smith
               </button>
+              <a className="concept-continue" href="https://localsiteslab.com" onClick={dismiss}>
+                Visit Local Sites Lab
+              </a>
             </div>
           </section>
         </div>
